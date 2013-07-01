@@ -21,8 +21,10 @@ Usage
 1. Update the recipient's e-mail address script (line 12)
 2. Consider giving the script a name more appropriate considering your specific environment
 3. Add the script to your crontab. If you want to run it every five minutes, your entry may look like this:
+
 	
 	*/5 * * * * script.sh http://your.url/goes/here 200 /optional/script/path
+
 
 In this example, a GET request is fired at the specified URL.
 If the return code is anything but 200, an e-mail will be sent to the address specified in the script.
@@ -38,4 +40,4 @@ License
 -------
 
 In its brevity and obviousness, this script probably doesn't even count as intellectual property.
-In any case, then feel free to use it under the terms of the MIT license.
+In any case, feel free to use it under the terms of the MIT license.
